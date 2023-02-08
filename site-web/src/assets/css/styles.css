@@ -44,12 +44,14 @@ h1 {
     /*TODO : Assigner à la bonne zone de la grille */
     height: 100%;
     background-color: var(--main-color);
+    grid-area: nav-bar;
 }
 
 #main-area {
     /*TODO : Assigner à la bonne zone de la grille */
     padding: 0 10px;
     overflow-y: auto;
+    grid-area: main-area;
 }
 
 #playing-bar {
@@ -58,6 +60,7 @@ h1 {
     align-items: center;
     justify-content: space-between;
     border: 1px solid var(--main-color);
+    grid-area: playing-bar;
 }
 
 #nav-bar ul {
@@ -150,5 +153,9 @@ li a {
 @media only screen and (max-device-width: 600px),
 only screen and (max-width: 800px) {
     .playlist-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+        flex-wrap: wrap;
     }
 }

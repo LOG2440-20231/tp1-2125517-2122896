@@ -6,19 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/x-icon" href="./assets/img/favico.ico" />
     <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v6.1.2/css/all.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,300;1,400;1,500&display=swap"
       rel="stylesheet"
     />
-    <title>PolyPlay</title>
+    <title>PolyPlay - Ma Bibliothèque</title>
   </head>
   <body id="container">
     <header>
       <nav id="nav-bar" class="flex-column">
         <ul class="flex-column">
-          <li>
+          <li class="button">
+            <a href="index.html">
+              <i class="fa fa-music"></i>
+              <span>Ma Bibliothèque</span>
+            </a>
+          </li>
+          <li class="button">
+            <a href="create_playlist.html">
+              <i class="fa fa-plus"></i>
+              <span>Créer Playlist</span>
+            </a>
+          </li>
+          <li class="button">
             <a href="./about.html">
               <i class="fa fa-info-circle"></i>
               <span>À Propos</span>
@@ -29,15 +42,87 @@
     </header>
     <main id="main-area" class="flex-column">
       <div id="search-bar">
+        <form id="search-form" class="flex-row">
+          <input id="search-input" type="text" placeholder="Rechercher..."></input>
+          <button class="fa fa-2x fa-search" type="submit"></button>
+        </form>
       </div>
       <div id="playlist-list">
         <h1>Mes Playlists</h1>
+          <section id="playlist-container" class="flex-row">
+            <a class="playlist-item flex-column" href="./playlist.html">
+              <div class="playlist-preview">
+                <img src="./assets/img/default.png">
+                <i class="fa fa-2x fa-play-circle hidden playlist-play-icon"></i>
+                <p class="playlist-title">Ma Premiere Playlist</p>
+                <p class="playlist-description">Playlist de base</p>
+              </div>
+            </a>
+            <a class="playlist-item flex-column" href="./playlist.html">
+              <div class="playlist-preview">
+                <img src="./assets/img/rock.jpg">
+                <i class="fa fa-2x fa-play-circle hidden playlist-play-icon"></i>
+                <p class="playlist-title">Playlist de Rock</p>
+                <p class="playlist-description">Playlist avec une description beaucoup plus longue</p>
+              </div>
+            </a>
+            <a class="playlist-item flex-column" href="./playlist.html">
+              <div class="playlist-preview">
+                <img src="./assets/img/disc_weekly.jpeg">
+                <i class="fa fa-2x fa-play-circle hidden playlist-play-icon"></i>
+                <p class="playlist-title">Discover Weekly</p>
+                <p class="playlist-description">Playlist avec beaucoup de chansons</p>
+              </div>
+            </a>
+          </section>
       </div>
       <div id="songs-list">
         <h1>Mes Chansons</h1>
+        <section id="song-container" class="flex-column">
+          <div class="song-item flex-row">
+            <p>Whip</p>
+            <p>Electronic</p>
+            <p>prazkhanal</p>
+            <i class="fa-regular fa-2x fa-heart"></i>
+          </div>
+          <div class="song-item flex-row">
+            <p>Overflow</p>
+            <p>Classic</p>
+            <p>Piano Amor</p>
+            <i class="fa-regular fa-2x fa-heart"></i>
+          </div>
+          <div class="song-item flex-row">
+            <p>Intrigue Fun</p>
+            <p>Jazz</p>
+            <p>Music Town</p>
+            <i class="fa fa-2x fa-heart"></i>
+          </div>
+          <div class="song-item flex-row">
+            <p>Bounce</p>
+            <p>Electronic</p>
+            <p>Coma-Media</p>
+            <i class="fa-regular fa-2x fa-heart"></i>
+          </div>
+          <div class="song-item flex-row">
+            <p>Summer Pranks</p>
+            <p>Rock</p>
+            <p>Lemon Music Studio</p>
+            <i class="fa fa-2x fa-heart"></i>
+          </div>
+        </section>
       </div>
     </main>
-    <footer id="TODO">
+    <footer id="playing-bar">
+      <div>
+        <p>
+          Choisir une playlist à travers la
+          <a href="./index.html">Bibliothèque</a> pour la faire jouer
+        </p>
+      </div>
+      <div id="creators">
+        <p>Jason Owaida 2122896</p>
+        <p>Hadi Allam 2125517</p>
+      </div>
     </footer>
   </body>
 </html>
