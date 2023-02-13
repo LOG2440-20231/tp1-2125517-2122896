@@ -36,15 +36,18 @@ Notez que la correction des travaux ne se fera pas sur MacOS, assurez-vous donc 
 
 | **Exigences**                                     | **Note** | **Points** |
 | ------------------------------------------------- | :------: | :--------: |
-| Respect des exigences fonctionnelles de l’énoncé  |    0     |     6      |
-| Validation des données entrées                    |    0     |     1      |
-| Utilisation adéquate des éléments d’un formulaire |    0     |     1      |
-| Utilisation adéquate des balises sémantiques      |    0     |     1      |
-| Validité de la sémantique de la page              |    0     |     1      |
-| Entête et Pied de page                            |    0     |     1      |
-| Page `about`                                      |    0     |     1      |
-| Page `create_playlist`                            |    0     |     2      |
-| Page `index`                                      |    0     |     2      |
-| Page `playlist`                                   |    0     |     2      |
-| Qualité et clarté du code HTML et CSS             |    0     |     2      |
-| **Total**                                         | **0**    |   **20**   |
+| Respect des exigences fonctionnelles de l’énoncé  |    5     |     6      |
+| Validation des données entrées                    |    1     |     1      |
+| Utilisation adéquate des éléments d’un formulaire |    1     |     1      |
+| Utilisation adéquate des balises sémantiques      |    1     |     1      |
+| Validité de la sémantique de la page              |    1     |     1      |
+| Entête et Pied de page                            |    1     |     1      |
+| Page `about`                                      |    0.25     |     1      |
+| Page `create_playlist`                            |    1     |     2      |
+| Page `index`                                      |    0.25     |     2      |
+| Page `playlist`                                   |    1     |     2      |
+| Qualité et clarté du code HTML et CSS             |    2     |     2      |
+| **Total**                                         | **14.5**    |   **20**   |
+
+- Revoir certains tests au niveau de l'index
+- Revoir l'affichage des pages
